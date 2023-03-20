@@ -12,23 +12,8 @@
 //	3. If the element matches the key return the element index
 //	4. If none of the elements matches the key return -1 
 
-package main
+package search
 
-import(
-	"fmt"
-)
-
-func main()  {
-	var num_array = []int {12, 27, 3, 42, 9} // we'll be working only with integers for simplicity
-	const key int = 13
-	var key_idx int = LinearSearch(num_array, key)
-
-	if key_idx != -1{
-		fmt.Printf("The element %d were found in index %d of the array.\n", key, key_idx)
-	} else {
-		fmt.Printf("The element %d were not found in the array.\n", key)
-	}
-}
 
 // Classical implementation of linear search
 func LinearSearch(num_array []int, key int) int {
