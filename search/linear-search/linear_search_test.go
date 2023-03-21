@@ -6,7 +6,7 @@ import(
 
 func TestLinearSearch(t *testing.T) {
 	tests := []struct {
-		num_array		[]int
+		numArray		[]int
 		givenKey		int
 		expectedIndex	int
 	}{
@@ -16,8 +16,8 @@ func TestLinearSearch(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		if got := LinearSearch(test.num_array, test.givenKey); got != test.expectedIndex {
-			t.Errorf("expected %q, got %q", test.expectedIndex, got)
+		if got := LinearSearch(test.numArray, test.givenKey); got != test.expectedIndex {
+			t.Errorf("expected %v, got %v", test.expectedIndex, got)
 		}
 	}
 }

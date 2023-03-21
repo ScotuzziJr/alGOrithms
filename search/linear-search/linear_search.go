@@ -16,13 +16,12 @@ package search
 
 
 // Classical implementation of linear search
-func LinearSearch(num_array []int, key int) int {
-	for idx, num := range num_array {
+func LinearSearch(numArray []int, key int) int {
+	for idx, num := range numArray {
 		if num == key {
 			return idx
 		}
 	}
-
 	return -1
 }
 
@@ -31,8 +30,8 @@ func LinearSearch(num_array []int, key int) int {
 //	if the current element we're looking for is bigger than the given key
 // It's well known that one should implement a binary search algorithm instead of linear search for sorted
 //	arrays but this implementation is only for study purposes
-func LinearSearchSortConstraint(num_array []int, key int) int {
-	for idx, num := range num_array {
+func LinearSearchSortConstraint(numArray []int, key int) int {
+	for idx, num := range numArray {
 		if num == key {
 			return idx
 		} else if num > key {
